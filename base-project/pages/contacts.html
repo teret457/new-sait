@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Портфолио студента — Контакты</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="logo"><span class="logo-mark"></span> Кучиев Максим</div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="./projects.html">Проекты</a></li>
+            <li><a href="./diary.html">Дневник</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="panel card">
+        <h1 style="margin:0 0 12px">Свяжитесь со мной</h1>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" class="input" type="text" required minlength="2" />
+            <div class="hint">Минимум 2 символа</div>
+            <div class="error" data-error-for="name"></div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" class="input" type="email" required />
+            <div class="hint">Формат: name@example.com</div>
+            <div class="error" data-error-for="email"></div>
+          </div>
+          <div class="field">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" class="textarea" required minlength="10"></textarea>
+            <div class="hint">Минимум 10 символов</div>
+            <div class="error" data-error-for="message"></div>
+          </div>
+          <div>
+            <button class="btn primary" type="submit">Отправить сообщение</button>
+          </div>
+        </form>
+
+        <div style="margin-top:14px" class="muted">
+          Контакты: student@edu.ru · <a href="https://github.com/Velzevul444" target="_blank" rel="noopener">GitHub: Velzevul444</a> · Москва, Россия
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>© 2025 Контакты</div>
+        <div class="muted">student@edu.ru · <a href="https://github.com/Velzevul444" target="_blank" rel="noopener">GitHub: Velzevul444</a> · Москва</div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+  </html>
+
+

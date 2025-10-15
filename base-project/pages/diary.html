@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Портфолио студента — Дневник</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="logo"><span class="logo-mark"></span> Кучиев Максим</div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="./projects.html">Проекты</a></li>
+            <li><a href="./diary.html">Дневник</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="panel card">
+        <h1 style="margin:0 0 12px">Мой учебный прогресс</h1>
+        <div class="timeline" id="timeline">
+          <div class="timeline-item panel">
+            15 дек — Верстка макета сайта ✓
+          </div>
+          <div class="timeline-item panel">
+            10 дек — JavaScript основы ✓
+          </div>
+          <div class="timeline-item panel">
+            05 дек — Работа с формами in progress
+          </div>
+          <div class="timeline-item panel">
+            01 дек — Адаптивный дизайн in progress
+          </div>
+        </div>
+
+        <form id="addRecord" style="margin-top:14px; display:grid; gap:10px">
+          <div class="field">
+            <label for="recordText">Добавить запись</label>
+            <input id="recordText" class="input" type="text" placeholder="Например: 20 дек — Итоговый проект ✓" />
+            <div class="hint">Нажмите «Добавить», чтобы запись появилась вверху ленты</div>
+          </div>
+          <div>
+            <button class="btn primary" type="submit">Добавить запись</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="section">
+        <div class="panel card">
+          <h2>Текущие курсы</h2>
+          <div class="course-list">
+            <div>
+              <div class="muted">Веб‑разработка — 90%</div>
+              <div class="progress"><span style="width:90%"></span></div>
+            </div>
+            <div>
+              <div class="muted">JavaScript — 70%</div>
+              <div class="progress"><span style="width:70%"></span></div>
+            </div>
+            <div>
+              <div class="muted">React — 50%</div>
+              <div class="progress"><span style="width:50%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>© 2025 Контакты</div>
+        <div class="muted">student@edu.ru · <a href="https://github.com/Velzevul444" target="_blank" rel="noopener">GitHub: Velzevul444</a> · Москва</div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+  </html>
+
+

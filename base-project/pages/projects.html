@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Портфолио студента — Проекты</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="logo"><span class="logo-mark"></span> Кучиев Максим</div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="./projects.html">Проекты</a></li>
+            <li><a href="./diary.html">Дневник</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1 style="margin:0 0 16px">Мои проекты</h1>
+
+      <div class="projects-filter">
+        <button class="btn" data-filter="all">Все</button>
+        <button class="btn" data-filter="html">HTML</button>
+        <button class="btn" data-filter="js">JS</button>
+        <button class="btn" data-filter="react">React</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="panel project-card" data-tags="html">
+          <h3>Личный сайт</h3>
+          <p class="muted">HTML, CSS</p>
+        </article>
+        <article class="panel project-card" data-tags="js">
+          <h3>Todo‑лист</h3>
+          <p class="muted">Vanilla JS</p>
+        </article>
+        <article class="panel project-card" data-tags="react">
+          <h3>Интернет‑магазин</h3>
+          <p class="muted">React</p>
+        </article>
+        <article class="panel project-card" data-tags="bootstrap html">
+          <h3>Портфолио</h3>
+          <p class="muted">Bootstrap</p>
+        </article>
+        <article class="panel project-card" data-tags="js">
+          <h3>Галерея</h3>
+          <p class="muted">JS + API</p>
+        </article>
+        <article class="panel project-card" data-tags="react">
+          <h3>Чат‑клиент</h3>
+          <p class="muted">React</p>
+        </article>
+      </div>
+    </main>
+
+    <div class="modal-backdrop" id="projectModal">
+      <div class="panel modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-header">
+          <h3 id="modalTitle">Проект</h3>
+          <button class="btn" data-close>Закрыть</button>
+        </div>
+        <div class="modal-body">
+          <p class="muted" id="modalDesc">Описание проекта, скриншоты, ссылки на демо и исходники.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+            <a class="btn" id="modalLive" href="#" target="_blank" rel="noopener">Живая версия</a>
+            <a class="btn" id="modalCode" href="#" target="_blank" rel="noopener">Исходный код</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>© 2025 Контакты</div>
+        <div class="muted">student@edu.ru · <a href="https://github.com/Velzevul444" target="_blank" rel="noopener">GitHub: Velzevul444</a> · Москва</div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+  </html>
+
+
